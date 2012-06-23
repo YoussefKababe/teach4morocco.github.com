@@ -7,7 +7,7 @@ $black: rgb(0,0,0);
 $white: rgb(255,255,255);
 $total-width: 960px;
 $content-width: 780px;
-$menu-height: 38px;
+$menu-height: 50px;
 $border: 1px;
 $main-font: Droid Sans;
 $font-for-the-rest: helvetica;
@@ -17,84 +17,88 @@ $content-margin: 15px;
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
 body{
-    height: 100%;
     text-align: center;
     font-family: $main-font, $font-for-the-rest;
-    margin-top: 0;
 }
 
 #container{
     width: $total-width;
     height: $page-height;
-    position: relative;
     margin: auto;
-}
+    position: relative;
 
-#header{
-    width: $total-width;
-    top: 0;
-    filter:alpha(opacity=90);
-    -moz-opacity:0.9;
-    -khtml-opacity: 0.9;
-    opacity: 0.9;
-    z-index:99;
-    .current{
-        font-weight: bold;
-    }
-    ul{    
-        margin: 0 0 0 180px;
-	width: 960px;
-	padding: 0;
-	margin-left: 300px;
-	margin-top: 50px;
-        li{
-            a:link,a:active,a:visited{
-                text-decoration:none;
-                color: $color1;
-                font: {
-                    size: 15px;
-                }
-            }         
-            padding: 9px 15px 0 15px;
+    #header{
+        position: fixed;
+        top:0;
+        
+        #logo{
+            height:150px;
+            width: 270px;
+            background-image: url(../images/logo.png);
             float: left;
-            list-style: none;
-            border-right: 1px solid #ddd;
-	    &:last-child{
-		border-right: none;
-	    }
+            z-index: 100;
         }
-
-    }
-    #logo{
-        height:150px;
-        width: 270px;
-        background-image: url(../images/logo.png);
-        float: left;
-        z-index: 100;
-    }
-}
-
-#banner{
-        position: relative;
-	width: $total-width - 20px;
-        margin-top: $menu-height + 70px;
-	text-align: center;
-	padding: 4px;
-	padding-left: 50px;
-	h1{
-	    font-size: 40px;
-	}
-}
-
-#main{
-    ul{
-	li{
-	    float: left;
-	}
-    }
-}
-
-#footer{
     
+        ul{    
+            width: 960px;
+            padding: 0;
+            list-style: none;
+            margin: $menu-height 0 0 180px;
+            
+            li{
+                a:link,a:active,a:visited{
+                    text-decoration:none;
+                    color: $color1;
+                    font: {
+                    size: 15px;
+                    }
+                }
+                float: left;
+                border-right: 1px solid #ddd;
+                padding: 9px 15px 0 15px;
+                &:last-child{
+		          border-right: none;
+                }
+            }
+
+        }
+    }
+
+    #banner{
+        margin-top: $menu-height + 70px;
+        padding: 4px;
+        h1{
+	       font-size: 41px;
+        }
+    }
+
+    #main{
+        ul{
+	       li{
+	           float: left;
+	           list-style: none;
+	           h1 {
+		          color: $color1;
+	           }
+	           a:link,a:active,a:visited{
+		          text-decoration:none;
+		          color: $color2;
+		          font: {
+                    size: 15px;
+		          }
+	           }
+		   padding: 9px 15px 0 15px;
+	       }
+        }
+    
+        #partners{
+        }
+    }
+    
+    #footer{
+        float: left;   
+    }
 }
+
+
 

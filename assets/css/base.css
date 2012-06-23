@@ -1,63 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 /* Teach4Morocco */
 /* Logo-like Glue */
 /* Logo-like Redish */
 /* Learn more section Green*/
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 body {
-  height: 100%;
   text-align: center;
-  font-family: Droid Sans, helvetica;
-  margin-top: 0; }
+  font-family: Droid Sans, helvetica; }
 
 #container {
   width: 960px;
   height: 100%;
-  position: relative;
-  margin: auto; }
-
-#header {
-  width: 960px;
-  top: 0;
-  filter: alpha(opacity=90);
-  -moz-opacity: 0.9;
-  -khtml-opacity: 0.9;
-  opacity: 0.9;
-  z-index: 99; }
-  #header .current {
-    font-weight: bold; }
-  #header ul {
-    margin: 0 0 0 180px;
-    width: 960px;
-    padding: 0;
-    margin-left: 300px;
-    margin-top: 50px; }
-    #header ul li {
-      padding: 9px 15px 0 15px;
+  margin: auto;
+  position: relative; }
+  #container #header {
+    position: fixed;
+    top: 0; }
+    #container #header #logo {
+      height: 150px;
+      width: 270px;
+      background-image: url(../images/logo.png);
       float: left;
+      z-index: 100; }
+    #container #header ul {
+      width: 960px;
+      padding: 0;
       list-style: none;
-      border-right: 1px solid #ddd; }
-      #header ul li a:link, #header ul li a:active, #header ul li a:visited {
-        text-decoration: none;
-        color: #981a36;
-        font-size: 15px; }
-      #header ul li:last-child {
-        border-right: none; }
-  #header #logo {
-    height: 150px;
-    width: 270px;
-    background-image: url(../images/logo.png);
+      margin: 50px 0 0 180px; }
+      #container #header ul li {
+        float: left;
+        border-right: 1px solid #ddd;
+        padding: 9px 15px 0 15px; }
+        #container #header ul li a:link, #container #header ul li a:active, #container #header ul li a:visited {
+          text-decoration: none;
+          color: #981a36;
+          font-size: 15px; }
+        #container #header ul li:last-child {
+          border-right: none; }
+  #container #banner {
+    margin-top: 120px;
+    padding: 4px; }
+    #container #banner h1 {
+      font-size: 41px; }
+  #container #main ul li {
     float: left;
-    z-index: 100; }
-
-#banner {
-  position: relative;
-  width: 940px;
-  margin-top: 108px;
-  text-align: center;
-  padding: 4px;
-  padding-left: 50px; }
-  #banner h1 {
-    font-size: 40px; }
-
-#main ul li {
-  float: left; }
+    list-style: none;
+    padding: 9px 15px 0 15px; }
+    #container #main ul li h1 {
+      color: #981a36; }
+    #container #main ul li a:link, #container #main ul li a:active, #container #main ul li a:visited {
+      text-decoration: none;
+      color: #669166;
+      font-size: 15px; }
+  #container #footer {
+    float: left; }
