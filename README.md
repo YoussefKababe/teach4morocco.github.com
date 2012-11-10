@@ -1,3 +1,5 @@
+Repository for content of Teach4Morocco.ma. 
+
  TODO:
 - Keep fonts consistent. 
 	OptimaLTStd
@@ -5,4 +7,4 @@
 	Or any others.
 
 - When hover over links, show the other color, either green or red. 
--Center anything. Keep lists responsive. 
+- Center anything. Keep lists responsive. 
