@@ -79,6 +79,18 @@ body {
         color: #8a2036;
         font-weight: bold;
         font-size: 15px;
+        display: block; }      
+        .container .main_content .main_text h2 {
+        margin: 15px 0 0 0;
+        padding: 0;
+        color: #649664;
+        font-size: 14px;
+        display: block; }
+        .container .main_content .main_text h3 {
+        margin: 15px 0 0 0;
+        padding: 0;
+        color: #FF7F50;
+        font-size: 13px;
         display: block; }
       .container .main_content .main_text ul {
         margin: 0;
